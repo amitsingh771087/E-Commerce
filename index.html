@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Figma Store</title>
+</head>
+<body>
+    <header class="header">
+        <div class="head-left">
+            <button class="btn">SHOP</button>
+            <button class="btn">ABOUT</button>
+            <button class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <h2 class="head-center">THE FIGMA STORE</h2>
+        <div class="head-right">
+            <!-- <button class="btn"> -->
+            <select id="country-select" class="country-select">
+                <option value="usa" selected>UNITED STATE</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+        <!-- </button> -->
+            <button class="btn" id="cart-button" class="cart-button">
+                CART <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+    
+    
+    <section class="hero">
+        <img src="/assets/Main.png" alt="img">
+
+       
+             <div class="text">
+                <b>
+                FIGMA'S
+                <span class="text-icon-wrapper">
+                  <img class="text-icon" src="/assets/star.svg" alt="star" />
+                  COLLECTION
+                  <img class="text-icon" src="/assets/hourglass.svg" alt="hourglass" />
+                  OF
+                  
+                  
+                </span>
+                <br />
+               <span class="underline"> LAYERS </span>
+                <span class="text-icon-wrapper">
+                  <img class="text-icon" src="/assets/elect.svg" alt="elect" />
+                  AND
+                  <img class="text-icon" src="/assets/four.svg" alt="four" />
+                  <span class="underline"> COMPONENTS </span>
+                  <img class="text-icon" src="/assets/load.svg" alt="load" />
+                  FOR
+                </span>
+                <br />
+                YOU
+                <span class="text-icon-wrapper">
+                  <img class="text-icon" src="/assets/pin.svg" alt="pin" />
+                  AND
+                  <img class="text-icon" src="/assets/ZigZag.svg" alt="ZigZag" />
+                  YOUR
+                  <img class="text-icon" src="/assets/triangle.svg" alt="triangle" />
+                  FRIENDS
+                  <!-- <img class="text-icon" src="/assets/friends.svg" alt="friends" /> -->
+                  
+                </span>
+            </b>
+              </div>
+            
+    </section>
+
+    <div class="key">
+       <div class="text-keyboard">
+        <h3>FIGMA X WORK <br /> LOUDER</h3>
+        <p>Meet the limited edition <br />
+            Figma Creator Micro <br />
+             Keyboard.
+        </p>
+        <button class="preorder-btn"> <b>PREORDER</b></button>
+       </div>
+       <img class="keyboard" src="/assets/keyboard.webp" alt="">
+    </div>
+    
+    <section class="categories">
+       
+        <div class="category-list">
+            <div class="category-item">
+                <a href="category.html?category=womens">
+                    <img src="/assets/womens.jpeg" alt="Women's Category">
+                    <p>CATEGORY</p>
+                    <h3>WOMENS</h3>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="category.html?category=accessories">
+                    <img src="/assets/accessories.jpeg" alt="Accessories Category">
+                    <p>CATEGORY</p>
+                    <h3>ACCESSORIES</h3>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="category.html?category=mens">
+                    <img src="/assets/mens.jpeg" alt="Men's Category">
+                    <p>CATEGORY</p>
+                    <h3>MENS</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <div class="logo-box top-box">THE</div>
+                    <div class="logo-box middle-box">FIGMA</div>
+                    <div class="logo-box bottom-box">STORE</div>
+                </div>
+                
+            </div>
+            <div class="obj">
+            <div class="footer-object">
+                <div class="inspiration-text">
+                    OBJECTS<br>THAT INSPIRE.
+                </div>
+                <div class="footer-privacy">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Sale</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="">FIGMA</a>
+                <a href="">TWITTER</a>
+                <a href="">INSTAGRAM</a>
+                <a href="">YOUTUBE</a>
+            </div>
+        </div>
+            
+            <div class="footer-scroll">
+                <a href="#"><img  src="/assets/upper.svg" alt="Scroll Up"></a>
+            </div>
+        </div>
+        <div class="footer-marquee">
+            <marquee behavior="scroll" direction="left">
+                FIGMA'S ~ MARVELOUSLY ~ CONSIDERED ~ COLLECTION ~ OF ~ OBJECTS ~ FOR ~ OUR ~ TIME ~ ON ~ FIGMA'S ~ MARVELOUSLY ~ CONSIDERED ~ COLLECTION ~ OF ~ OBJECTS ~ FOR ~ OUR ~ TIME ~
+            </marquee>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

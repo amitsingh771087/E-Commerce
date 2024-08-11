@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/category.css">
+    <title>Category</title>
+</head>
+<body>
+    <header class="header">
+        <div class="head-left">
+            <button class="btn">SHOP</button>
+            <button class="btn">ABOUT</button>
+            <button class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <h2 class="head-center">THE FIGMA STORE</h2>
+        <div class="head-right">
+            <!-- <button class="btn"> -->
+            <select id="country-select" class="country-select">
+                <option value="usa" selected>UNITED STATE</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+        <!-- </button> -->
+            <button class="btn" id="cart-button" class="cart-button">
+                CART <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+   
+    <section class="products">
+        <h2>CATEGORY</h2>
+        <!-- <h2 id="product-category"></h2>
+        <div id="product-list" class="product-list"></div> -->
+        <div id="product-category"></div>
+        <div id="product-list" class="product-list"></div>
+        <div id="product-details" class="product-container"></div>
+    </section>
+
+    <footer>
+        <div class="footer-marquee">
+            <div class="footer-content">
+                <!-- Other footer content can go here -->
+            </div>
+            <marquee behavior="scroll" direction="left">
+                FIGMA'S ~ MARVELOUSLY ~ CONSIDERED ~ COLLECTION ~ OF ~ OBJECTS ~ FOR ~ OUR ~ TIME ~ ON ~ FIGMA'S ~ MARVELOUSLY ~ CONSIDERED ~ COLLECTION ~ OF ~ OBJECTS ~ FOR ~ OUR ~ TIME ~
+            </marquee>
+        </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
+

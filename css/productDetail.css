@@ -1,0 +1,414 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-radius: 10px 10px 0 0;
+    margin: 10px 10px 0 10px;
+    height: 60px;
+}
+
+.head-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn, select {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: background-color 0.4s ease, color 0.3s ease;
+    margin-left: 10px;
+}
+
+.btn:hover, select:hover {
+    background: black;
+    color: white;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button svg {
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+
+.product-detail-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    /* background-color: #fff; Added background color for clarity */
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); Added box shadow for a subtle effect */
+}
+
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s, border 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+}
+
+.main-image {
+    margin-top: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+.layers-btn{
+    width: 100px;
+    padding: 3px 0;
+    background: rgb(67, 213, 67);
+    border: none;
+    border-radius: 30px;
+    color: black;
+
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.product-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+   text-align: left;
+}
+
+.product-info p {
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.size-selection {
+    margin-top: 10px;
+}
+
+.size-selection .sizes {
+    display: flex;
+}
+
+.size-selection .sizes span {
+    display: inline-block;
+    padding: 13px 13px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.size-selection .sizes span.selected {
+    background-color: black;
+    color: white;
+}
+
+.quantity-selection {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.quantity-selection button {
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.quantity-selection input {
+    width: 20px;
+    text-align: center;
+    margin: 0 10px;
+    border: none;
+    background-color: #f7f7f7;
+}
+
+.sold-out {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #625c5c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: not-allowed;
+}
+
+
+/* Styling for the contact form */
+
+.contact-form {
+    display: none; 
+    margin: 20px auto ;
+    padding: 20px;
+    max-width: 600px;
+    background-color:#fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contact-form button:disabled {
+    background-color: gray;
+}
+
+/* Styling for the "LAYERS" button */
+.product-info #contact-btn {
+    width: 100px;
+    padding: 3px 0;
+    background: rgb(67, 213, 67);
+    border: none;
+    border-radius: 30px;
+    color: black;
+    /* background-color: darkgreen;
+    color: white;
+    padding: 8px 6px;
+    border: none;
+    width: auto;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px; */
+}
+
+/* Footer styling */
+
+
+/* Footer Styles */
+/* General Footer Styling */
+.footer {
+    background-color: #D0B9F7;
+    padding: 30px 0;
+    color: black;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 20%;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo-shape {
+    background-color: #efc22e;
+    padding: 20px;
+    border-radius: 50% 50% 0 0;
+    display: grid;
+    height: auto;
+    width: 150px;
+    
+    box-sizing: border-box;
+}
+
+.logo-shape span {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+   
+}
+
+/* Top center span */
+.logo-shape .span1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Bottom left span */
+.logo-shape .span2 {
+    grid-column: 1;
+    grid-row: 2;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+/* Bottom right span */
+.logo-shape .span3 {
+    grid-column: 3;
+    grid-row: 2;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(360deg);
+}
+
+/* Footer Text Styling */
+.footer-text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.footer-text h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.obj {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-bottom: 55px;
+    
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-size: 1.7 rem;
+    margin-left: 5px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-policy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-policy a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+} */
+
+/* Scroll to Top Button */
+.footer-scroll {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #D0B9F7;
+}
+
+.footer-scroll a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* Footer Bottom Marquee */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Position it at the bottom of the screen */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0;
+    right: 0;
+    background-color: #D0B9F7; /* Match the footer background color */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.footer-bottom marquee {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+
+ .scroll-top {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}

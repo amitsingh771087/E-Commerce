@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  /* header CSS */
+  .header {
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-radius: 10px 10px 0 0;
+    margin: 10px 10px 0 10px;
+    height: 60px;
+  }
+  
+  .head-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .btn , select {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: background-color 0.4s ease, color 0.3s ease;
+    margin-left: 10px;
+    
+  }
+  .btn:hover , select:hover {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: black;
+    color: white;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-button svg {
+    width: 20px;
+    height: 20px;
+    color: black;
+  }
+
+  /*  */
+  .products h2{
+    font-size: 1.5rem;
+    padding-left: 250px;
+
+  }
+  
+  
+
+  /*  */
+
+
+  footer {
+    background-color: #FFDD00;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+}
+
+.footer-content {
+    /* Ensure footer content is above the marquee */
+    padding-bottom: 50px; /* Adjust this if needed */
+}
+
+.footer-marquee {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px; /* Space between text and bottom of footer */
+}
+
+marquee {
+    white-space: nowrap;
+}

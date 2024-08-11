@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/productDetail.css" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="head-left">
+        <button class="btn">SHOP</button>
+        <button class="btn">ABOUT</button>
+        <button class="search-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-search"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+      <h2 class="head-center">THE FIGMA STORE</h2>
+      <div class="head-right">
+        <!-- <button class="btn"> -->
+        <select id="country-select" class="country-select">
+          <option value="usa" selected>UNITED STATE</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="australia">Australia</option>
+          <option value="india">India</option>
+        </select>
+        <!-- </button> -->
+        <button class="btn" id="cart-button" class="cart-button">
+          CART <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="product-detail">
+      <!-- Product details will be dynamically loaded here -->
+    </main>
+    <!-- Contact Form -->
+    <div id="contact-form" class="contact-form">
+      <h4>Contact Us</h4>
+      <form id="contact-form-content">
+        <input type="text" id="first-name" placeholder="First Name" required />
+        <input type="text" id="last-name" placeholder="Last Name" required />
+        <input
+          type="email"
+          id="email-address"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          type="tel"
+          id="phone-number"
+          placeholder="Phone Number"
+          required
+        />
+        <input type="text" id="address" placeholder="Address" required />
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo-shape">
+          <span class="span1">THE</span>
+          <span class="span2">FIGMA</span>
+          <span class="span3">STORE</span>
+        </div>
+
+        <div class="footer-text">
+          <div class="obj">
+            
+              <h3>
+                OBJECTS <br />
+                THAT INSPIRE.
+              </h3>
+           
+
+            <span class="footer-policy">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Sale</a>
+              <a href="#">Contact Us</a>
+            </span>
+          </div>
+          <div class="footer-links">
+            <a href="#">FIGMA</a>
+            <a href="#">TWITTER</a>
+            <a href="#">INSTAGRAM</a>
+            <a href="#">YOUTUBE</a>
+          </div>
+        </div>
+        <div class="footer-scroll">
+          <a href="#"><img src="/assets/upper.svg" alt="Scroll Up" /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <marquee
+          >FIGMA'S ~ MARVELOUSLY ~ CONSIDERED ~ COLLECTION ~ OF ~ OBJECTS ~ FOR
+          ~ OUR ~ TIME ~ ON ~ FIGMA'S ~ MARVELOUSLY ~ CONSIDERED ~ COLLECTION ~
+          OF ~ OBJECTS ~ FOR ~ OUR ~ TIME ~</marquee
+        >
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
