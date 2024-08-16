@@ -11,9 +11,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  border-radius: 10px 10px 0 0;
-  margin: 10px 10px 0 10px;
+  padding: 0 80px;
+  
+  /* border-radius: 10px 10px 0 0; */
+  /* margin: 10px 10px 0 10px; */
   height: 60px;
 }
 
@@ -70,9 +71,11 @@ select:hover {
 .hero {
   margin-top: 0px;
 }
-.hero img {
-  width: 98.6%;
-  margin: 0 10px;
+.hero .banner {
+  /* height:; */
+  width: 100vw;
+  /* width: 98.6%; */
+  /* margin: 0 10px; */
 }
 
 .text {
@@ -353,4 +356,109 @@ footer {
 marquee {
   white-space: nowrap;
 }
+
+/* Base styles for the menu icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #ffc700;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  z-index: 1000;
+  padding: 10px;
+}
+
+/* Media queries for tablet and mobile */
+@media (max-width: 1024px) {
+  .header {
+      padding: 0 20px;
+  }
+
+  .head-left,
+  .head-right {
+      display: none;
+  }
+
+  .menu-icon {
+      display: flex;
+      align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .banner {
+      width: 100%;
+  }
+
+  .text {
+      font-size: 1.2rem;
+      margin: 50px 0;
+  }
+
+  .text-keyboard h3 {
+      font-size: 1.3rem;
+  }
+
+  .text-keyboard p {
+      font-size: 1rem;
+  }
+
+  .keyboard {
+      width: 100%;
+      height: auto;
+  }
+
+  .categories {
+      padding: 50px 0;
+  }
+
+  .category-item img {
+      width: 200px;
+      height: 270px;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+  }
+
+  .footer-object {
+      margin: 0;
+  }
+
+  .footer-links {
+      margin-left: 0;
+  }
+
+  .footer-privacy {
+      margin-left: 0;
+  }
+
+  .footer-marquee {
+      font-size: 0.9em;
+  }
+}
+
+/* Mobile Menu Open/Close */
+.menu-open .mobile-menu {
+  display: flex;
+}
+
 
