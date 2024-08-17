@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Figma Store</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
         <div class="head-left">
-            <button class="btn">SHOP</button>
-            <button class="btn">ABOUT</button>
+            <button  class="btn"><a href="./shop.html">SHOP</a> </button>
+            <button class="btn"><a href="./shop.html"> ABOUT</a> </button>
             <button class="search-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-search">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
@@ -20,7 +30,6 @@
         </div>
         <h3 class="head-center">THE FIGMA STORE</h3>
         <div class="head-right">
-            <!-- <button class="btn"> -->
             <select id="country-select" class="country-select">
                 <option value="usa" selected>UNITED STATE</option>
                 <option value="canada">Canada</option>
@@ -28,16 +37,56 @@
                 <option value="australia">Australia</option>
                 <option value="india">India</option>
             </select>
-        <!-- </button> -->
             <button class="btn" id="cart-button" class="cart-button">
-                CART <span id="cart-count">0</span>
+                <a href="./shop.html">  CART <span id="cart-count">0</span></a>
+                
+            </button>
+            
+        </div>
+        <button class="search-button search-button1">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+        <div id="menu-icon" class="menu-icon">☰</div>
+        <div id="mobile-menu" class="mobile-menu">
+            <div id="close-icon" class="close-icon">✖</div>
+            <button class="btn"><a href="./shop.html"> SHOP</a></button>
+            <button class="btn"><a href="./shop.html"> ABOUT </a></button>
+            <select id="country-select" class="country-select">
+                <option value="usa" selected>UNITED STATE</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+            <button class="btn" id="cart-button">
+                <a href="./shop.html"> CART <span id="cart-count">0</span> </a>
+                
             </button>
         </div>
     </header>
-    
-    
-    <section class="hero">
+
+    <!-- banner section -->
+
+    <div class="banner">
         <img class="banner" src="./assets/Main.png" alt="img">
+    </div>
+    
+
+    <section class="hero">
+        
 
        
              <div class="text">
@@ -70,7 +119,7 @@
                   YOUR
                   <img class="text-icon" src="./assets/triangle.svg" alt="triangle" />
                   FRIENDS
-                  <!-- <img class="text-icon" src="/assets/friends.svg" alt="friends" /> -->
+                  
                   
                 </span>
             </b>
@@ -78,20 +127,30 @@
             
     </section>
 
+    <!-- key  -->
+
     <div class="key">
-       <div class="text-keyboard">
-        <h3>FIGMA X WORK <br /> LOUDER</h3>
-        <p>Meet the limited edition <br />
-            Figma Creator Micro <br />
-             Keyboard.
-        </p>
-        <button class="preorder-btn"> <b>PREORDER</b></button>
-       </div>
-       <img class="keyboard" src="./assets/keyboard.webp" alt="">
+        <div class="text-keyboard">
+            <h3>FIGMA X WORK <br /> LOUDER</h3>
+            <p>Meet the limited edition <br />
+                Figma Creator Micro <br />
+                Keyboard.
+            </p>
+            <button class="preorder-btn"> <b>PREORDER</b></button>
+        </div>
+        <img class="keyboard" src="./assets/keyboard.webp" alt="Keyboard">
+        <div class="key-text">
+            <h3>FIGMA X WORK <br /> LOUDER</h3>
+            <p>Meet the limited edition <br />
+                Figma Creator Micro <br />
+                Keyboard.
+            </p>
+            <button class="preorder-btn"> <b>PREORDER</b></button>
+        </div>
     </div>
     
+    
     <section class="categories">
-       
         <div class="category-list">
             <div class="category-item">
                 <a href="category.html?category=womens">
@@ -130,10 +189,10 @@
             </div>
             <div class="obj">
             <div class="footer-object">
-                <div class="inspiration-text">
+                <div class="inspiration-text" >
                     OBJECTS<br>THAT INSPIRE.
                 </div>
-                <div class="footer-privacy">
+                <div class="footer-privacy" style="padding-bottom: 6px;">
                     <a href="">Privacy Policy</a>
                     <a href="">Terms of Sale</a>
                     <a href="">Contact Us</a>
@@ -158,6 +217,18 @@
         </div>
     </footer>
 
+    <script>
+     document.getElementById('menu-icon').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+});
+
+document.getElementById('close-icon').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.remove('open');
+});
+
+    </script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>

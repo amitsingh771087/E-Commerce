@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        /* Main container */
+        .main {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:white;
+            color:black;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Coming Soon message box */
+        .coming-soon-message {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            background-color:#ffc700;
+        }
+
+        /* Coming Soon title */
+        .coming-soon-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* Coming Soon description */
+        .coming-soon-description {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="head-left">
+            <button  class="btn">SHOP </button>
+            <button class="btn"> ABOUT </button>
+            <button class="search-button">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-search">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <h3 class="head-center">THE FIGMA STORE</h3>
+        <div class="head-right">
+            <select id="country-select" class="country-select">
+                <option value="usa" selected>UNITED STATE</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+            <button class="btn" id="cart-button" class="cart-button">
+                  CART <span id="cart-count">0</span>
+                
+            </button>
+            
+        </div>
+        <button class="search-button search-button1">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+        <div id="menu-icon" class="menu-icon">☰</div>
+        <div id="mobile-menu" class="mobile-menu">
+            <div id="close-icon" class="close-icon">✖</div>
+            <button class="btn">SHOP</button>
+            <button class="btn">ABOUT</button>
+            <select id="country-select" class="country-select">
+                <option value="usa" selected>UNITED STATE</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+            <button class="btn" id="cart-button">
+                CART <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="coming-soon-message">
+            <div class="coming-soon-title">Coming Soon</div>
+            <div class="coming-soon-description">We are working hard to bring something amazing to you. Stay tuned!</div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-container">
+                    <div class="logo-box top-box">THE</div>
+                    <div class="logo-box middle-box">FIGMA</div>
+                    <div class="logo-box bottom-box">STORE</div>
+                </div>
+                
+            </div>
+            <div class="obj">
+            <div class="footer-object">
+                <div class="inspiration-text" >
+                    OBJECTS<br>THAT INSPIRE.
+                </div>
+                <div class="footer-privacy" style="padding-bottom: 6px;">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Sale</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="">FIGMA</a>
+                <a href="">TWITTER</a>
+                <a href="">INSTAGRAM</a>
+                <a href="">YOUTUBE</a>
+            </div>
+        </div>
+            
+            <div class="footer-scroll">
+                <a href="#"><img  src="./assets/upper.svg" alt="Scroll Up"></a>
+            </div>
+        </div>
+        <div class="footer-marquee">
+            <marquee behavior="scroll" direction="left">
+                FIGMA'S ~ MARVELOUSLY ~ CONSIDERED ~ COLLECTION ~ OF ~ OBJECTS ~ FOR ~ OUR ~ TIME ~ ON ~ FIGMA'S ~ MARVELOUSLY ~ CONSIDERED ~ COLLECTION ~ OF ~ OBJECTS ~ FOR ~ OUR ~ TIME ~
+            </marquee>
+        </div>
+    </footer>
+    
+</body>
+</html>
