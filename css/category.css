@@ -1,100 +1,232 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-  }
-  
-  /* header CSS */
-  .header {
-    background-color:white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    border-radius: 10px 10px 0 0;
-    margin: 10px 10px 0 10px;
-    height: 60px;
-  }
-  
-  .head-left {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-  }
-  
-  .btn , select {
-    height: 30px;
-    padding: 0 10px;
-    border-radius: 20px;
-    border: 1px solid black;
-    background-color: transparent;
-    transition: background-color 0.4s ease, color 0.3s ease;
-    margin-left: 10px;
-    
-  }
-  .btn:hover , select:hover {
-    height: 30px;
-    padding: 0 10px;
-    border-radius: 20px;
-    border: 1px solid black;
-    background: black;
-    color: white;
-  }
-  
-  .search-button {
-    background: none;
-    border: none;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .search-button svg {
-    width: 20px;
-    height: 20px;
-    color: black;
-  }
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  box-sizing: border-box;
+}
 
-  /*  */
-  .products h2{
-    font-size: 1.5rem;
-    padding-left: 250px;
+/* Header CSS */
+.header {
+  /* background-color:whi; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  height: 60px;
+}
 
-  }
-  
-  
+.head-left, .head-right {
+  display: flex;
+  align-items: center;
+}
 
-  /*  */
+.head-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.btn, select {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: transparent;
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
+
+.btn:hover, select:hover {
+  background: black;
+  color: white;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button svg {
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.menu-icon, .close-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu , .search-button1 {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #ffc700;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
 
 
-  footer {
-    background-color: #FFDD00;
-    padding: 100px 20px;
-    text-align: center;
-    position: relative;
-    margin-top: auto;
+/* Menu Button CSS */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-button svg {
+  width: 30px;
+  height: 30px;
+  color: black;
+}
+
+/* Drawer CSS */
+.drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.drawer.open {
+  display: block;
+  transform: translateX(0);
+}
+
+.drawer .btn, .drawer select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Products Section */
+.products h2 {
+  font-size: 1.5rem;
+  padding-left: 250px;
+}
+
+/* Footer CSS */
+footer {
+  background-color: #FFDD00;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  margin-top: auto;
 }
 
 .footer-content {
-    /* Ensure footer content is above the marquee */
-    padding-bottom: 50px; /* Adjust this if needed */
+  padding-bottom: 50px;
 }
 
 .footer-marquee {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #000;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 10px; /* Space between text and bottom of footer */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 marquee {
-    white-space: nowrap;
+  white-space: nowrap;
+}
+
+/* Responsive CSS */
+@media (max-width: 820px) {
+  .head-left , .head-right {
+    display: none;
+}
+
+
+.menu-icon {
+    display: block;
+}
+
+.mobile-menu.open  {
+    display: flex;
+}
+
+.head-center {
+    text-align: left;
+}
+}
+@media (max-width: 480px) {
+  .header {
+      padding: 0 10px;
+  }
+
+  .btn, select {
+      height: 28px;
+      font-size: 0.9rem;
+  }
+
+  .search-button svg {
+      width: 18px;
+      height: 18px;
+  }
+
+  .products h2 {
+      font-size: 1.3rem;
+      padding-left: 10px;
+  }
+
+  footer {
+      padding: 30px 5px;
+  }
+
+  .footer-marquee {
+      font-size: 0.8em;
+      padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      padding: 0 20px;
+  }
+  .head-left , .head-right {
+    display: none;
+}
+
+
+.menu-icon {
+    display: block;
+}
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.head-center {
+    text-align: left;
+}
+/* banner */
+
+.banner img{
+  width: 100%;
+  height: 40vh;
+}
+.text{
+  font-size: 0.8rem;
+  margin: 50px 0 25px 0;
+}
 }
