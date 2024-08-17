@@ -229,7 +229,7 @@ function displayProductDetails(productId) {
                         <button id="increase-quantity">+</button>
                     </div>
                     <button id="sold-out-btn" class="sold-out" disabled>SOLD OUT</button>
-                    <p>${product.description}</p>
+                    <b style="font-size:0.8rem ; margin:10px">${product.description}</b>
                     <p>100% cotton unisex sizing. Printing printed with puff ink on <br> a comfort color tee.</p>
                     <button id="contact-btn" class="contact-btn" style="display: none;">Contact Us</button>
                 </div>

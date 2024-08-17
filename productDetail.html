@@ -9,42 +9,74 @@
   <body>
     <header class="header">
       <div class="head-left">
-        <button class="btn">SHOP</button>
-        <button class="btn">ABOUT</button>
-        <button class="search-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-search"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
+          <button  class="btn"><a href="./shop.html">SHOP</a> </button>
+          <button class="btn"><a href="./shop.html"> ABOUT</a> </button>
+          <button class="search-button">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-search">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+          </button>
       </div>
-      <h2 class="head-center">THE FIGMA STORE</h2>
+      <h3 class="head-center">THE FIGMA STORE</h3>
       <div class="head-right">
-        <!-- <button class="btn"> -->
-        <select id="country-select" class="country-select">
-          <option value="usa" selected>UNITED STATE</option>
-          <option value="canada">Canada</option>
-          <option value="uk">UK</option>
-          <option value="australia">Australia</option>
-          <option value="india">India</option>
-        </select>
-        <!-- </button> -->
-        <button class="btn" id="cart-button" class="cart-button">
-          CART <span id="cart-count">0</span>
-        </button>
+          <select id="country-select" class="country-select">
+              <option value="usa" selected>UNITED STATE</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+              <option value="australia">Australia</option>
+              <option value="india">India</option>
+          </select>
+          <button class="btn" id="cart-button" class="cart-button">
+              <a href="./shop.html">  CART <span id="cart-count">0</span></a>
+              
+          </button>
+          
       </div>
-    </header>
+      <button class="search-button search-button1">
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-search">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+      </button>
+      <div id="menu-icon" class="menu-icon">☰</div>
+      <div id="mobile-menu" class="mobile-menu">
+          <div id="close-icon" class="close-icon">✖</div>
+          <button class="btn"><a href="./shop.html"> SHOP</a></button>
+          <button class="btn"><a href="./shop.html"> ABOUT </a></button>
+          <select id="country-select" class="country-select">
+              <option value="usa" selected>UNITED STATE</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+              <option value="australia">Australia</option>
+              <option value="india">India</option>
+          </select>
+          <button class="btn" id="cart-button">
+              <a href="./shop.html"> CART <span id="cart-count">0</span> </a>
+              
+          </button>
+      </div>
+  </header>
 
     <main id="product-detail">
       <!-- Product details will be dynamically loaded here -->
@@ -114,6 +146,18 @@
         >
       </div>
     </footer>
+
+    <script>
+      document.getElementById('menu-icon').addEventListener('click', function() {
+  var menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('open');
+});
+
+document.getElementById('close-icon').addEventListener('click', function() {
+  var menu = document.getElementById('mobile-menu');
+  menu.classList.remove('open');
+});
+  </script>
 
     <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
